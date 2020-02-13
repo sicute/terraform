@@ -1,17 +1,18 @@
 ####
 provider "aws" {
+  ##profiles in .aws/credential 
   profile = "dev"
   region     = "ap-southeast-1"
 }
-
 #################################################################################
 
 resource "aws_spot_instance_request" "spotstagapp" {
-
+  #base ami was backup from previous
   ami                         = "ami-05c1c1xxxxxx"
   instance_type               = "t3a.micro"
   wait_for_fulfillment = true
   spot_type = "one-time"
+  #set max price will be  spot / hours
   spot_price = "0.003"
   key_name                    = "staging-bc"
   monitoring                  = true
@@ -26,14 +27,6 @@ resource "aws_spot_instance_request" "spotstagapp" {
     CreateBy    	= "sonjayaterraform"
     }
 }
-
-#################################################################################
-#################################################################################
-#################################################################################
-
-
-#################################################################################
-#################################################################################
 #################################################################################
 output "public_ip" {
   value       = aws_spot_instance_request.spotstagapp.public_ip
