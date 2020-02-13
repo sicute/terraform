@@ -7,8 +7,8 @@
 
 ## here to run and excute : 
 ```
-> terraform init ( initailize module and file )
-> terraform plan  ( check file terrafrom syntac correct or now and calculate and show )
-> terraform apply  ( execute terraform to deploy it )
-> terrafrom destroy ( destroy was terraform build with apply command )
+$ terraform init ( initailize module and file )
+$ terraform plan  ( check file terrafrom syntac correct or now and calculate and show )
+$ terraform apply  ( execute terraform to deploy it )
+$ terrafrom destroy ( destroy was terraform build with apply command )
 ````
