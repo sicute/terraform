@@ -1,4 +1,4 @@
-# This sample script Terraform for basic daily activity
+#  For Learning Terraform for basic to advance
 ## Software need before playing terraform 
  * terraform binary you can download here https://www.terraform.io/downloads.html
  * already setup account cloud such as AWS , GCP , Alibaba and another support terraform 
